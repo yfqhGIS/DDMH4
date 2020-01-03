@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页智慧董地</title>
+    <link href="css/index.css" rel="stylesheet">
+    <!--轮播图需要这版jquery-->
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <!--新闻文字tab-->
+    <script src="js/jquery.tab.js" type="text/javascript"></script>
+    <!--轮播图-->
+    <script src="js/jquery.slideBox.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="box">
+    <!--头部区域-->
+    <div class="topbox">
+        <!--logo及登录-->
+        <div class="top">
+            <!--<a href="index.html"><img src="images/zhcs_logo.png" class="top-logo"></a>&lt;!&ndash;logo样式&ndash;&gt;-->
+            <!--<div class="top-text">-->
+            <!--<a href="index.html"  class ="top-textp">智慧董地</a>-->
+            <!--</div>-->
+            <div><a href="index.html"><img src="images/logo.png"></a></div>
+            <!--搜索框-->
+            <!--<div class="t-sousuo">-->
+            <!--<div class="sousuok">-->
+            <!--<input type="text" placeholder="输入搜索内容" class="t-txt">-->
+            <!--<input type="button" value="搜&nbsp;索" class="t-btn">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--天气日期-->
+            <div class="top_DateWeather">
+                <!--<div class="yc_date fl"><span id=localtime></span></div>-->
+                <div class="yc_weather fr">
+                    <iframe  scrolling="no" height="25"  frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&amp;id=10&amp;icon=1&amp;py=nayong"></iframe>
+                </div>
+
+            </div>
+            <!--登录注册-->
+            <div class="top-login">
+                <ul >
+                    <li>
+                        <a href="" ><img src="images/top_denglu1.png"/>登&nbsp;录</a>
+                    </li>
+                    <li><a href=" "><img src="images/top_zhuce1.png"/>注&nbsp;册</a></li>
+                    <li ><a href=" ">移动APP</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--导航区域-->
+        <div class="navbox">
+            <!--1200px导航居中-->
+            <div class="top-nav">
+                <!--150px宽，向左浮动-->
+                <nav class="nav_list">
+                    <ul >
+                        <li class="drop-menu-effect"><a href="index.html" class="selected2">网站首页</a></li>
+                        <li class="nav-image"><img src="images/dh.jpg"></li>
+                        <li class="drop-menu-effect"><a href="">工作管理</a>
+                            <ul class="submenu">
+                                <li><a href="#">诗赋星家</a></li>
+                                <li><a href="#">社团比拼</a></li>
+                                <li><a href="#">诗友互动</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-image"><img src="images/dh.jpg"></li>
+                        <li class="drop-menu-effect"><a href="">社会治理</a></li>
+                        <li class="nav-image"><img src="images/dh.jpg"></li>
+                        <li class="drop-menu-effect"><a href="">大数据监管中心</a></li>
+                        <li class="nav-image"><img src="images/dh.jpg"></li>
+                        <li class="drop-menu-effect"><a href="">运维管理</a></li>
+                        <li class="nav-image"><img src="images/dh.jpg"></li>
+                        <li class="drop-menu-effect"><a href="">精准扶贫</a></li>
+                        <li class="nav-image"><img src="images/dh.jpg"></li>
+                        <li class="drop-menu-effect"><a href="">农产品溯源</a></li>
+                        <li class="nav-image"><img src="images/dh.jpg"></li>
+                        <li class="drop-menu-effect"><a href="">****</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--正文部分-->
+    <div class="conbox">
+        <!--董地新闻-->
+        <div class="newsbox">
+            <!--新闻轮播图-->
+            <div  class="leftbar">
+                <div class="focus"> <span class="mark"><img src="images/img_mark.png"></span>
+                    <!--头图轮换，id="lunbotu"在js内-->
+                    <div id="lunbotu" class="slideBox">
+                        <ul class="items" id="ul_list_lunbotu">
+                        </ul>
+                    </div>
+                    <!--头图轮换结束-->
+                </div>
+            </div>
+            <!--新闻文字-->
+            <div class="wenzibar">
+                <!--在js内设置tab-->
+                <div class="yc_inews_tab1 fl" id="yc_intab1">
+                    <div id="yc_intag1">
+                        <ul>
+                            <li id="news_li_more_dongdi" class="" style="cursor: pointer;"><a href="#" title="更多董地新闻">董地新闻</a></li>
+                            <li id="news_li_more_xxtz" style="cursor: pointer;" class=""><a href="#" title="更多全市新闻">消息通知</a></li>
+                            <li id="news_li_more_zsyz" style="cursor: pointer;" class="cur"><a href="#" title="更多重点项目">招商引资</a></li>
+                        </ul>
+                    </div>
+                    <div id="yc_incont1">
+                        <div class="yc_incont1" style="display: none;">
+                            <ul id="listNewsDongDI">
+                            </ul>
+                        </div>
+                        <div class="yc_incont1" style="display: none;">
+                            <ul id="listNewsXXTZ">
+                            </ul>
+                        </div>
+                        <div class="yc_incont1" style="display: block;">
+                            <ul id="listNewsZSYZ">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--特色产业-->
+        <div class="tscybox">
+            <!--标题栏-->
+            <div class="titlediv585">
+                <div class="tscyimg"></div>
+
+                <a class="titletext" href="#" target="_blank" title="特色产业">特色产业</a>
+                <div class="titlexq" id="news_li_more_tscy">
+                    更多>>
+                </div>
+            </div>
+            <!--内容栏-->
+            <div class="tscycont" id="divContentTSCY">
+
+            </div>
+        </div>
+        <!--精准扶贫-->
+        <div class="jzfpbox">
+            <!--标题栏-->
+            <div class="titlediv585">
+                <div class="jzfpimg"></div>
+                <a class="titletext" href="#" target="_blank" title="精准扶贫">精准扶贫</a>
+                <div class="titlexq" id="news_li_more_jzfp">
+                    更多>>
+                </div>
+            </div>
+            <!--内容栏-->
+            <div class="jzfpcont" id="divContentJZFP">
+                <ul id="listNewsJZFP">
+                </ul>
+            </div>
+        </div>
+
+
+        <!--走进董地-->
+        <div class="zjddbox">
+            <!--标题栏-->
+            <div class="titlediv1200">
+                <div class="zjddimg"></div>
+                <a class="titletext" href="#" target="_blank" title="走进董地">走进董地</a>
+                <div class="titlexq" id="news_li_more_zjdd">
+                    更多>>
+                </div>
+            </div>
+            <!--内容栏-->
+            <div class="zjddcont">
+                <div class="zjddxqjj" id="divxq">
+                    <p id="idPZjdd">
+                    </p>
+                </div>
+                <div class="zjddjj" id="zjddjj">
+
+                </div>
+            </div>
+        </div>
+        <!--走进董地结束-->
+        <!--农产品溯源-->
+        <div class="ncpsybox">
+            <!--标题栏-->
+            <div class="titlediv1200">
+                <div class="ncpsyimg"></div>
+                <a class="titletext" href="#" target="_blank" title="农产品溯源">农产品溯源</a>
+                <div class="titlexq">
+                    <a  href="#" target="_blank" title="农产品溯源">更多>></a>
+                </div>
+            </div>
+            <!--内容栏-->
+            <div class="ncpsycont">
+                <!--第一幅大图框-->
+                <div class="ncpsyimgtk ncpsymargin">
+                    <a href="" target="_blank" title="糯谷猪">
+                        <div class="ncpsyimgblk blka">
+                            <img src="images/conncpsyngz1.png" />
+                        </div>
+                        <div class="ncpsyimgblk blkb">
+                            <img src="images/conncpsyngz2.png" />
+                        </div>
+                        <div class="ncpsyimgblk blkc">
+                            <img src="images/conncpsyngz3.png" />
+                        </div>
+                        <p>糯谷猪</p>
+                    </a>
+                </div>
+                <!--第二幅大图框-->
+                <div class="ncpsyimgtk ncpsymargin">
+                    <a href="" target="_blank" title="水稻种植">
+                        <div class="ncpsyimgblk blka">
+                            <img src="images/conncpsysd1.png" />
+                        </div>
+                        <div class="ncpsyimgblk blkb">
+                            <img src="images/conncpsysd2.png" />
+                        </div>
+                        <div class="ncpsyimgblk blkc">
+                            <img src="images/conncpsysd3.png" />
+                        </div>
+                        <p>水稻种植</p>
+                    </a>
+                </div>
+                <!--第三幅大图框-->
+                <div class="ncpsyimgtk ncpsymargin">
+                    <a href="" target="_blank" title="肉牛养殖">
+                        <div class="ncpsyimgblk blka">
+                            <img src="images/conncpsyrnyz1.png" />
+                        </div>
+                        <div class="ncpsyimgblk blkb">
+                            <img src="images/conncpsyrnyz2.png" />
+                        </div>
+                        <div class="ncpsyimgblk blkc">
+                            <img src="images/conncpsyrnyz3.png" />
+                        </div>
+                        <p>肉牛养殖</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--农产品溯源结束-->
+    </div>
+    <!--页脚部分,浅蓝色填满*/-->
+    <div>
+        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="html/foot.html" height="170px" width="100%"></iframe>
+    </div>
+</div>
+
+<script src="js/op/config.js" type="text/javascript"></script>
+<script src="js/op/common.js" type="text/javascript"></script>
+<script src="js/op/newsinit.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript" ></script>
+</body>
+</html>

@@ -1,0 +1,1246 @@
+@charset "utf-8";
+/*
+ Created by zhusy on 2019/9/7.
+ */
+/*全局样式*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑", "Microsoft YaHei", "microsoft yahei", SimSun, Arial, Helvetica, Tahoma, sans-serif;
+    outline: none;
+    font-size: 14px;
+    letter-spacing:1px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*无下划线 */
+ul, li {
+    list-style: none;
+}
+
+img {
+    border: 0px;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "微软雅黑", "Microsoft YaHei", SimSun, Arial, Helvetica, Tahoma, sans-serif, "microsoft yahei";
+    /*background-color: #f2f9ff;*/
+}
+
+html, body, ul, li, ol, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*浮动定位*/
+.fl {
+    float: left;
+    display: inline
+}
+
+.fr {
+    float: right;
+    display: inline
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+/*头部背景图*/
+.topbox {
+    width: 100%;
+    height: 170px;
+    background: url(../images/top_bg_sea3.png) repeat center top;
+    z-index: -1;
+}
+
+.top {
+    width: 1200px;
+    height: 110px;
+    margin: auto;
+    padding: 0 25px;
+    position: relative;
+
+}
+
+/*logo样式*/
+.top-logo {
+    margin-top: 22px;
+    margin-left: 20px;
+    height: 60%;
+    /*background-color: #a541a6;*/
+}
+
+/*智慧董地字体*/
+.top-text {
+    top: 22px;
+    left: 86px;
+    float: left;
+    width: 250px;
+    position: absolute;
+    /*background-color: #10a629;*/
+
+}
+
+.top-textp {
+    font-size: 60px;
+    font-family: STXingkai;
+    font-weight: 500;
+    color: rgb(23, 83, 146);
+    line-height: 80px;
+    text-align: center;
+}
+
+/*搜索框*/
+.t-sousuo {
+    width: 338px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+}
+
+.sousuok {
+    width: 335px;
+    height: 40px;
+    border: 1px solid #1679df;
+    /*border-radius: 15px;*/
+}
+
+.t-txt {
+    width: 230px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background: none;
+    padding-left: 20px;
+    color: #5f5f5e;
+    outline: none;
+}
+
+.t-btn {
+    width: 78px;
+    margin-top: 1px;
+    height: 38px;
+    background-color: #1b8edf;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 0px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.t-btn:active {
+    background-color: #0083d7;
+}
+
+/*天气日期*/
+.top_DateWeather {
+    top: 10px;
+    right: 30px;
+    height: 30px;
+    position: absolute;
+    font-size: 12px;
+    /*background-color: #44ff1c;*/
+}
+
+#localtime {
+    width: 160px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.yc_date {
+    /*width:160px;*/
+    /*padding-left:35px;*/
+    color: #1E1E1E;
+    line-height: 30px;
+}
+
+.yc_weather {
+    width: 220px;
+    margin-left: 20px;
+    padding: 6px 0 0;
+    /*background-color: #ff6415;*/
+
+}
+
+/*登录注册*/
+.top-login {
+    top: 70px;
+    right: 30px;
+    /*height:100%;*/
+    /*width:270px;*/
+    position: absolute;
+    /*background-color: #ff2716;*/
+    margin: auto;
+}
+
+.top-login > ul {
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    /*background: #df313f;*/
+}
+
+.top-login li {
+    float: left;
+    margin: auto 4px auto 20px;
+    text-align: center;
+    /*height: 110px;*/
+    /*line-height: 110px;*/
+    font-size: 14px;
+    background-repeat: no-repeat;
+}
+
+.top-login > ul > li > a:link, .top-login > ul > li > a:focus {
+    display: block;
+    font-size: 14px;
+    color: #1E1E1E;
+}
+
+.top-login > ul > li > a:hover {
+    display: block;
+    font-size: 14px;
+    color: #0097e5;
+    /*background: #cadf09;*/
+
+}
+
+.top-login img {
+    width: 25px;
+    height: 25px;
+    float: left;
+    background-position: center;
+}
+
+/*导航样式*/
+.navbox {
+    width: 100%;
+    height: 60px;
+    /*background-color: #1b8edf;*/
+    background-color: #0097e5;
+}
+
+/*功能导航区*/
+.top-nav {
+    height: 100%;
+    width: 1200px;
+    padding: 0 25px;
+    /*background-color: #ffff00;*/
+    margin: auto;
+}
+
+.nav_list {
+    float: left;
+    display: inline;
+    height: 60px;
+    z-index: 9999;
+    /*padding-left: 0;*/
+    /*list-style:none*/
+}
+
+.nav-image {
+    float: left;
+    width: 1px !important;
+    height: 60px
+}
+
+.nav_list li {
+    width: 149px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    position: relative;
+}
+
+.nav_list a.selected {
+    background: url(../images/nav_hover.png) no-repeat center center;
+}
+
+.nav_list a.selected2 {
+    background: url(../images/nav_hover.png) no-repeat center center;
+}
+
+.nav_list a {
+    display: block;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.nav_list ul li a:hover
+.nav_list ul li a:active {
+    display: block;
+    /*font-size: 21px;*/
+    background-color: #1861a3;
+    text-decoration: none;
+}
+
+.nav_list li .selected .submenu {
+    display: block;
+}
+
+.nav_list li .submenu {
+    display: none;
+    width: 149px;
+    z-index: 9999;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+ul .submenu li {
+    padding: 0;
+    margin: 0;
+    height: 45px;
+    line-height: 45px;
+}
+
+ul .submenu li a {
+    padding: 0;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    background: none;
+    color: #fff;
+    width: 149px;
+    font-size: 18px;
+}
+
+ul .submenu li a:hover {
+    /*background: url(../images/nav_manu.png) no-repeat center center;*/
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*正文部分*/
+.conbox {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding: 0 25px;
+    position: relative;
+    /*background-color: #dc232b;*/
+}
+
+/*董地新闻*/
+.newsbox {
+    width: 1200px;
+    height: auto;
+    padding: 25px 0;
+    float: left;
+    /*background-color: #bbffb9;*/
+}
+
+/*图片轮播*/
+.leftbar {
+    width: 660px;
+    height: 420px;
+    float: left;
+    margin-right: 20px;
+}
+
+.leftbar .focus {
+    width: 660px;
+    height: 420px;
+    float: left;
+    position: relative;
+    z-index: 0;
+}
+
+.leftbar .focus .mark {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+}
+
+/*轮播图css开始*/
+div.slideBox {
+    position: relative;
+    width: 660px;
+    height: 420px;
+    overflow: hidden;
+}
+
+div.slideBox ul.items {
+    position: absolute;
+    float: left;
+    background: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.slideBox ul.items li {
+    float: left;
+    background: none;
+    list-style: none; /*去除li前面的点*/
+    padding: 0;
+    margin: 0;
+}
+
+div.slideBox ul.items li a {
+    float: left;
+    line-height: normal !important;
+    padding: 0px !important;
+    border: none
+}
+
+div.slideBox ul.items li a img {
+    margin: 0px !important;
+    padding: 0px !important;
+    display: block;
+    border: none /*For IE.ADD.JENA.201206300844*/;
+}
+
+/*轮播图的下端文字栏*/
+div.slideBox div.tips {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    overflow: hidden;
+
+
+}
+
+div.slideBox div.tips div.title {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+}
+
+/*标题文字*/
+div.slideBox div.tips div.title a {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 50px;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+div.slideBox div.tips div.title a:hover {
+    text-decoration: underline !important;
+}
+
+div.slideBox div.tips div.nums {
+    position: absolute;
+    right: 0px;
+    top: auto;
+    height: 100%;
+}
+
+/*右边黑圈样式*/
+div.slideBox div.tips div.nums a {
+    display: inline-block;
+    float: left /*For IE.ADD.JENA.201206300844*/;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    text-indent: -99999px;
+    margin: 15px 8px 0px 0px;
+}
+
+div.slideBox div.tips div.nums a.active {
+    background-color: #0097e5;
+}
+
+/*轮播图css结束*/
+
+/*新闻文字*/
+.wenzibar {
+    width: 520px;
+    height: 420px;
+    float: left;
+    margin-right: 0;
+    /*background-color: #bedcb7;*/
+}
+
+.yc_inews_tab1 {
+    width: 520px;
+    float: left;
+    margin-top: -1px;
+}
+
+#yc_intag1 {
+    height: 38px;
+    background: #eff8ff;
+    /*background: url(../images/bg_news_tab1.png) no-repeat 0 0;*/
+    border-top: 1px solid #a6d0f4;
+    border-bottom: 1px solid #a6d0f4;
+    border-right: 1px solid #a6d0f4;
+}
+
+#yc_intag1 li {
+    float: left;
+    display: inline-block;
+    width: 172px;
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid #a6d0f4;
+}
+
+#yc_intag1 li a {
+    display: block;
+    color: #444;
+    font-size: 17px!important;
+}
+
+#yc_intag1 li a:hover {
+    color: #0083d7;
+}
+
+#yc_intag1 li.cur {
+    width: 171px;
+    height: 37px;
+    /*background: url(../images/bg_news_tabF1.png) no-repeat;*/
+    border-right: 1px solid #a6d0f4;
+    border-left: 1px solid #a6d0f4;
+    border-top: 2px solid #00a2ff;
+    color: #0083d7;
+    background: #ffffff;
+}
+
+#yc_intag1 li.cur a {
+    color: #0083d7;
+}
+
+#yc_incont1 {
+    width: 498px;
+    height: 365px;
+    overflow: hidden;
+    /*background-color: #dc232b;*/
+    padding: 15px 10px 0px 10px;
+    border-left: 1px solid #a6d0f4;
+    border-right: 1px solid #a6d0f4;
+    border-bottom: 1px solid #a6d0f4;
+}
+
+#divContentJZFP  ul li,.yc_incont1 ul li {
+    height: 33px;
+    width: 100%;
+    line-height: 33px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#divContentJZFP  ul li a,.yc_incont1 ul li a {
+    display: inline-block;
+    background: url(../images/icon_square.png) no-repeat 6px center;
+    padding-left: 16px;
+    width: 78%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#divContentJZFP ul li a:hover,.yc_incont1 ul li a:hover {
+    color: #0083d7;
+    padding-left: 17px;
+}
+
+#divContentJZFP ul li span,.yc_incont1 ul li span {
+    float: right;
+    color: #999;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+/*新闻文字结束*/
+
+/*标题栏*/
+.titlediv1200 {
+    background: url(../images/titlebg.png) no-repeat;
+    height: 40px;
+    clear: both;
+    overflow: hidden;
+    border-bottom:1px solid #109eed;
+}
+.titlediv585 {
+    background: url(../images/titlebg585.png) no-repeat;
+    height: 40px;
+    clear: both;
+    overflow: hidden;
+    border-bottom:1px solid #109eed;
+}
+
+/*标题文字*/
+.titletext {
+    text-align: center;
+    height: 40px;
+    margin: auto;
+    margin-left: 15px;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+    float: left;
+}
+
+/*更多详情*/
+.titlexq {
+    position: relative;
+    width: 82px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 5px;
+}
+
+.titlexq a {
+    font-size: 14px;
+    color: #505050;
+}
+
+.titlexq a:hover {
+    text-decoration: underline;
+}
+
+/*信息公告*/
+.xxggbox {
+    width: 585px;
+    height: auto;
+    padding-bottom: 25px;
+    float: left;
+    /*background-color: #ff58a9;*/
+}
+.xxggimg {
+    background: url("../images/bt_xxgg.png") no-repeat center;
+    width: 40px;
+    height: 40px;
+    margin: auto 14px;
+    float: left;
+}
+.zsyzcont,
+.xxggcont{
+    width: 565px;
+    height: 240px;
+    overflow: hidden;
+    padding: 15px 10px 0px 10px;
+    /*border-left: 1px solid #a6d0f4;*/
+    /*border-right: 1px solid #a6d0f4;*/
+    /*border-bottom: 1px solid #a6d0f4;*/
+}
+.zsyzcont ul li,
+.xxggcont ul li {
+    height: 33px;
+    width: 100%;
+    line-height: 33px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.zsyzcont ul li a,
+.xxggcont ul li a {
+    display: inline-block;
+    background: url(../images/icon_square.png) no-repeat 6px center;
+    padding-left: 16px;
+    width: 78%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.zsyzcont ul li a:hover,
+.xxggcont ul li a:hover {
+    color: #0083d7;
+    padding-left: 18px;
+}
+.zsyzcont ul li span,
+.xxggcont ul li span {
+    float: right;
+    color: #999;
+    padding-right: 5px;
+    font-size: 12px;
+}
+/*信息公告结束*/
+
+/*招商引资*/
+.zsyzbox {
+    width: 585px;
+    height: auto;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    float: left;
+    /*background-color: #00ffaf;*/
+}
+.zsyzimg {
+    background: url("../images/bt_zsyz.png") no-repeat center;
+    width: 40px;
+    height: 40px;
+    margin: auto 14px;
+    float: left;
+}
+/*招商引资结束*/
+
+/*走进董地*/
+.zjddbox{
+    width: 1200px;
+    height: auto;
+    padding-bottom: 25px;
+    clear:both ;
+    /*background-color: #ff7200;*/
+}
+.zjddimg{
+    background: url("../images/bt_zjdd.png") no-repeat center;
+    width: 40px;
+    height: 40px;
+    margin: auto 14px;
+    float: left;
+}
+.zjddcont{
+    width: 100%;
+    height: 240px;
+    padding-top: 15px;
+}
+.zjddxqjj{
+    width: 565px;
+    float: left;
+    height: 100%;
+    /*background-color: #00ff80;*/
+    padding: 0 10px;
+}
+.zjddxqjj p{
+    height: 210px;
+    padding-bottom: 5px;
+    text-indent:2em;/*首行缩进*/
+    line-height:30px;/*行间距*/
+    color:#333333;
+    overflow: hidden;/*超出的文本隐藏*/
+    text-overflow: ellipsis; /*溢出用省略号显示*/
+    float: left;
+    display: -webkit-box;   /*将对象作为弹性伸缩盒子模型显示。*/
+    -webkit-box-orient:vertical; /*从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）*/
+    -webkit-line-clamp: 7; /*这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数*/
+}
+.zjddxqjj a{
+    color:#0083d7;
+    float: right;
+    padding-right: 5px;
+    display:inline-block;
+}
+.zjddxqjj a:hover{
+    text-decoration: underline;
+}
+.zjddjj {
+    width: 570px;
+    float: left;
+    padding-left: 35px;
+    padding-right: 10px;
+    height: auto;
+    /*background-color: #e99e00;*/
+}
+.zjddlywh{
+    width: 100%;
+    height: 112px;
+    margin-top: 10px;
+    background-color: #f2f7e5;
+}
+.zjddchwl{
+    width: 100%;
+    height: 112px;
+    margin-top: 10px;
+    background-color: #fcf2f2;
+}
+.zjddjj img{
+    float: left;
+    width:142px;
+    height: 112px;
+}
+.zjddt{
+    float: left;
+    width:410px;
+    padding-left: 18px;
+    height: 112px;
+}
+.zjddtitle{
+    font-size: 18px;
+    color: #333;
+    line-height:40px;/*行间距*/
+}
+.zjddtext{
+    height: 50px;
+    width: 100%;
+    line-height:25px;/*行间距*/
+    color:#333333;
+    overflow: hidden;/*超出的文本隐藏*/
+    text-overflow: ellipsis; /*溢出用省略号显示*/
+    display: -webkit-box;   /*将对象作为弹性伸缩盒子模型显示。*/
+    -webkit-box-orient:vertical; /*从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）*/
+    -webkit-line-clamp: 2; /*这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数*/
+}
+.zjddgd{
+    color:#0083d7;
+    float: right;
+    padding-right: 10px;
+    display:inline-block;
+}
+.zjddt a:hover{
+    text-decoration: underline;
+}
+/*走进董地结束*/
+/*特色产业*/
+.tscybox{
+    width: 585px;
+    height: auto;
+    padding-bottom: 25px;
+    float: left;
+    /*background-color: #ff58a9;*/
+}
+.tscyimg{
+    background: url("../images/bt_tscy.png") no-repeat center;
+    width: 40px;
+    height: 40px;
+    margin: auto 14px;
+    float: left;
+}
+.tscycont{
+    width: 565px;
+    height: 240px;
+    overflow: hidden;
+    padding: 10px 10px 0px 10px;
+    /*border-left: 1px solid #a6d0f4;*/
+    /*border-right: 1px solid #a6d0f4;*/
+    /*border-bottom: 1px solid #a6d0f4;*/
+}
+.tscyimgtk{
+	float:left;
+	width: 176px;
+	height: 238px;
+	border: 1px solid #a6d0f4;
+}
+.tscymargin{
+    margin-right:10px;
+}
+.tscyimgtk div{
+	width: 172px;
+	height: 160px;
+	margin: 2px;
+	border-radius:4px;
+    /*background: rgba(234, 0, 3, 0.6);*/
+	overflow: hidden;
+
+}
+.tscyimgtk img{
+    cursor: pointer;
+    height:160px;
+    transition: all 0.6s;
+}
+
+.tscyimgtk span{
+    color: #0083d7;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+.tscyimgtk span:hover{
+    text-decoration: underline;
+}
+.tscyimgtk p{
+    height: 55px;
+    width: 100%;
+    padding-left: 5px;
+    line-height:25px;/*行间距*/
+    color:#333333;
+    overflow: hidden;/*超出的文本隐藏*/
+    text-overflow: ellipsis; /*溢出用省略号显示*/
+    display: -webkit-box;   /*将对象作为弹性伸缩盒子模型显示。*/
+    -webkit-box-orient:vertical; /*从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）*/
+    -webkit-line-clamp: 2; /*这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数*/
+}
+/*特色产业结束*/
+/*精准扶贫*/
+.jzfpbox {
+    width: 585px;
+    height: auto;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    float: left;
+    /*background-color: #feff00;*/
+}
+.jzfpimg{
+    background: url("../images/bt_jzfp.png") no-repeat center;
+    width: 40px;
+    height: 40px;
+    margin: auto 14px;
+    float: left;
+}
+.jzfpcont{
+    width: 565px;
+    height: 240px;
+    overflow: hidden;
+    padding: 15px 10px 0px 10px;
+    /*border-left: 1px solid #a6d0f4;*/
+    /*border-right: 1px solid #a6d0f4;*/
+    /*border-bottom: 1px solid #a6d0f4;*/
+}
+.jzfpcont>p{
+    height: 100px;
+    width: 100%;
+    text-indent:2em;/*首行缩进*/
+    line-height:25px;/*行间距*/
+    color:#333333;
+    overflow: hidden;/*超出的文本隐藏*/
+    text-overflow: ellipsis; /*溢出用省略号显示*/
+    display: -webkit-box;   /*将对象作为弹性伸缩盒子模型显示。*/
+    -webkit-box-orient:vertical; /*从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）*/
+    -webkit-line-clamp: 4; /*这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数*/
+}
+.jzfpa{
+    color:#0083d7;
+    float: right;
+    line-height: 25px;
+    padding-right: 5px;
+    display:inline-block;
+}
+.jzfpa:hover{
+    text-decoration: underline;
+}
+.jzfpimgs{
+    height: 115px;
+    clear: both;
+    padding-top: 5px;
+    /*background-color: #1AAB8A;*/
+}
+.jzfpimgtk{
+	float:left;
+	width: 100px;
+	height: 100%;
+    /*background-color: #79faff;*/
+}
+.jzfpmargin{
+    margin:0 20px;
+}
+.jzfpimgtk img{
+    width: 70px;
+	height: 70px;
+    cursor: pointer;
+    padding:6px 10px 0 10px;
+    transform-style: preserve-3d;  /*鼠标hover效果 左右翻转*/
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+}
+.jzfpimgtk img:hover{
+    transform: translateZ(30px) rotateY(90deg) scale(1.1);
+	-webkit-transform: translateZ(30px) rotateY(90deg) scale(1.1);
+	-ms-transform: translateZ(30px) rotateY(90deg) scale(1.1);
+	-moz-transform: translateZ(30px) rotateY(90deg) scale(1.1);
+}
+.jzfpimgtk p{
+    /*color: #0083d7;*/
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+.jzfpimgtk p:hover{
+    text-decoration: underline;
+    color: #0083d7;
+}
+/*精准扶贫结束*/
+/*农产品溯源*/
+.ncpsybox{
+    width: 1200px;
+    height: auto;
+    padding-bottom: 25px;
+    clear:both ;
+    /*background-color: #ff7200;*/
+}
+.ncpsyimg{
+    background: url("../images/bt_ncpsy.png") no-repeat center;
+    width: 40px;
+    height: 40px;
+    margin: auto 14px;
+    float: left;
+}
+.ncpsycont{
+    width: 100%;
+    height: 240px;
+    padding: 15px 10px 0 10px;
+}
+/*三幅图总图框*/
+.ncpsyimgtk{
+	float:left;
+	width: 330px;
+	height: 215px;
+	background:#FFFFFF;
+	border:1px solid #F5DEBC;
+	box-shadow:0px 4px 4px 0px rgba(34,35,35,0.45);
+	position:relative;/*为了下级图框ncpsyimg-a、ncpsyimg-b、ncpsyimg-c*/
+}
+.ncpsymargin{
+    margin: 0 30px;
+}
+.ncpsyimgblk{
+	width: 130px;
+	height: 130px;
+	box-shadow:0px 3px 3px 0px rgba(34,35,35,0.45);
+	cursor: pointer;
+	position:absolute;
+	overflow: hidden;
+	z-index: 0;
+}
+.ncpsyimgblk:hover{
+	/*box-shadow: 0px 0px 10px rgba(245,222,188,1);*/
+	z-index: 10;
+	transform: scale(1.1);
+}
+.blka{
+	left:5px;
+	top:5px;
+}
+.blkb{
+	left:100px;
+	top:40px;
+}
+.blkc{
+	left: 195px;
+	top: 75px;
+}
+.ncpsyimgtk p{
+	width: 100%;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color:#333333;
+	font-size:16px;
+	font-family:SourceHanSansCN-Regular;
+	top: 220px;
+	position:absolute;
+}
+.ncpsyimgtk p:hover{
+	color:#0083d7;
+    text-decoration: underline;
+}
+/*农产品溯源结束*/
+/*页脚部分,浅蓝色填满*/
+.footboxhz{
+	clear: both;
+	width: 100%;
+	height: 180px;
+	margin: auto;
+	background: rgb(20, 156, 234);
+}
+
+/*页脚部分背景图*/
+.footboximg{
+	width:1920px;
+	height: 180px;
+	margin: auto;
+	background-image:url('../images/footimg.png');
+	background-repeat: no-repeat;
+	z-index: 10;
+	position:relative;
+}
+/*页脚中间1920部分,给背景图添加透明蓝色*/
+.footboxls{
+	width: 100%;
+	height: 180px;
+	margin: auto;
+	z-index: 20;
+	position:relative;
+	background: rgb(20, 156, 234);
+	opacity:0.75;
+	top:-180px;
+}
+/*页脚中间1920部分,盛放内容，位于背景图、透明蓝色的上方*/
+.footbox{
+	width: 100%;
+	height: 180px;
+	margin: auto;
+	z-index: 30;
+	position:relative;
+	top:-360px;
+}
+
+/*页脚文字1200居中*/
+.footboxtext{
+	width: 1200px;
+	margin: auto;
+	overflow: hidden;
+}
+/*页脚文字部分1200宽两边留出200px居中*/
+.footboxtextjz{
+	width:800px;
+	margin: auto;
+	text-align: center;
+	/*background: rgb(234, 222, 0);*/
+}
+.foottext{
+	font-size:16px;
+	color: #ffffff;
+}
+/*友情链接*/
+.footyqlj{
+	width:96%;
+	margin:12px auto;
+}
+.footyqlj p{
+	float: left;
+	height: 30px;
+	line-height:30px;
+	width: 100px;
+}
+.footyqlj ul li a{
+	float: left;
+	height: 30px;
+	line-height:30px;
+	width: 120px;
+	text-align: center;
+	background-position: left;
+}
+a.foottext:hover{
+	color: #149CEA;
+	text-decoration: underline;
+}
+.footline{
+    color:#DEE1E6;
+    padding: 5px;
+    margin: 0 8px;
+	float: left;
+}
+/*单位信息*/
+.footdwxx{
+	clear: both;
+	width:96%;
+	margin:12px auto;
+}
+.footdwxx p{
+	height: 30px;
+	line-height:30px;
+	float: left;
+	width: 100px;
+}
+.footdwxx span{
+	height: 30px;
+	line-height:30px;
+	float: left;
+}
+a.foottext:hover{
+	color:#333333;
+	text-decoration: underline;
+}
+span.foottext:hover{
+	color:#333333;
+}
+
+/*以下都是新增内容*/
+.newsLeftBar{
+    width:1200px;
+    height:auto;
+    padding-top:25px;
+}
+
+.newsLeftMsg{
+    width:300px;
+    float:left;
+    height:600px;
+    border-right:1px solid #d1d1d1;
+    padding-bottom:0px;
+    margin-bottom: 0px
+}
+.newsRightContent{
+    float:left;
+    height:auto;
+    width:899px;
+}
+
+.newsLeftMsgTip{
+    width:283px;
+    height:60px;
+    text-align:center;
+    background: url(../images/lb.jpg);
+    background-repeat:no-repeat;
+    margin-top:40px;
+    margin-bottom:10px
+}
+.newsLeftMsgCatalog{
+    font-family:'微软雅黑';
+    padding-top:10px;
+    font-size: 21px;
+    color: #3885ff;
+    margin-left:70px;
+    width:120px;
+    text-align:center
+}
+
+#divNewsList ul li {
+    height: 33px;
+    width: 100%;
+    line-height: 33px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#divNewsList ul li a {
+    display: inline-block;
+    background: url(../images/icon_square.png) no-repeat 6px center;
+    padding-left: 16px;
+    width: 78%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#divNewsList ul li a:hover {
+    color: #0083d7;
+    padding-left: 17px;
+}
+
+#divNewsList ul li span {
+    float: right;
+    color: #999;
+    padding-right: 5px;
+    font-size: 12px;
+}
+.divDWQY{
+
+    display: block;
+    line-height: 45px;
+    border-bottom: 1px solid #d1d1d1;
+    font-family: "新宋体";
+    font-size: 12px;
+    color: #6e6e6e;
+    background-image: url(../images/dqwz.jpg);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 26px;
+    float: left;
+    width: 1200px;
+    height: auto;
+}
+
+.divDWQY a {
+    font-family: "新宋体";
+    font-size: 12px;
+    color: #6e6e6e;
+}

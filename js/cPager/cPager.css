@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#cPager {
+	width: 900px;
+	height: 50px;
+	font-size: 14px;
+}
+
+#cPager #pgBtndiv {
+	width: auto;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+#cPager #pgBtndiv .disable {
+	margin: 3px;
+	padding: 1px 10px 1px 10px;
+	border: 1px #ccc solid;
+	border-radius: 4px;
+	color: #ccc;
+	text-decoration: none;
+}
+
+#cPager #pgBtndiv a.pgBtn {
+	margin: 3px;
+	padding: 1px 10px 1px 10px;
+	border: 1px grey solid;
+	border-radius: 4px;
+	color: grey;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+#cPager #pgBtndiv a.active {
+	margin: 3px;
+	padding: 1px 10px 1px 10px;
+	/*border: 1px grey solid;*/
+	border-radius: 4px;
+	color: black;
+	text-decoration: none;
+}
+
+#cPager #pgBtndiv a.pgBtn:hover {
+	color: white;
+	background-color: #2a9ce3;
+	border: 1px solid;
+}
+
+#cPager #pgInput {
+	width: auto;
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	text-align: right;
+	color: grey;
+}
+
+#cPager #pgInput #gotoPage {
+	width: 30px;
+	border-radius: 3px;
+	border: 1px grey solid;
+	text-align: center;
+	color: grey;
+}
+
+#cPager #pgInput #gotoBtn {
+	color: white;
+	background-color: #2a9ce3;
+	padding: 1px 5px;
+	border: 1px solid;
+	border-radius: 3px;
+	cursor:pointer;
+}
